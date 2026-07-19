@@ -4,10 +4,10 @@ Simple configuration for my personal computers, separated between my Lenovo Thin
 
 ## Installation
 
-Just run `setup.sh`:
+Clone the repository and run `setup.sh`:
 
 ```bash
-$ bash setup.sh
+$ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 ```
 
 ### Pacman Programs
@@ -20,7 +20,6 @@ $ bash setup.sh
 - discord
 - firefox
 - flatpak
-- git
 - grim
 - hyprpaper
 - kanshi
