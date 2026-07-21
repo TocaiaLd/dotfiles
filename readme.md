@@ -10,12 +10,13 @@ Clone the repository and run `setup.sh`:
 $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 ```
 
-### Pacman Programs
+## Pacman Programs
 
 - bluez
 - btop
 - chromium
 - ckb-next
+- cliphist
 - curl
 - discord
 - firefox
@@ -41,17 +42,17 @@ $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 - wl-clipboard
 - yazi
 
-### Yay Programs
+## Yay Programs
 
 - bluetui
 - visual-studio-code-bin
 - wifitui-bin
 
-### Git Programs
+## Git Programs
 
 - [waybar](https://github.com/TocaiaLd/simple-waybar)
 
-### Other Programs
+## Other Programs
 
 - yay
 - zsh

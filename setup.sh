@@ -2,7 +2,7 @@
 
 # Installing pacman packages and moving config folders to ~.config
 
-PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next curl discord firefox flatpak grim hyprpaper kanshi kitty mpd networkmanager pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam vlc wget wl-clipboard yazi"
+PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next cliphist curl discord firefox flatpak grim hyprpaper kanshi kitty mpd networkmanager pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam vlc wget wl-clipboard yazi"
 
 sudo $PACMAN_PACKAGES
 
