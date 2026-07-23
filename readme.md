@@ -16,17 +16,20 @@ $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 - btop
 - chromium
 - ckb-next
-- cliphist
 - curl
 - discord
 - firefox
 - flatpak
 - grim
+- github-cli
 - hyprpaper
 - kanshi
 - kitty
 - mpd
 - networkmanager
+- noto-fonts 
+- noto-fonts-cjk 
+- noto-fonts-emoji
 - pavucontrol
 - playerctl
 - pulseaudio
@@ -37,6 +40,7 @@ $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 - rsync
 - slurp
 - steam
+- systemctl-tui
 - vlc
 - wget
 - wl-clipboard
@@ -45,9 +49,9 @@ $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 ## Yay Programs
 
 - bluetui
+- clipse
 - visual-studio-code-bin
 - wifitui-bin
-
 ## Git Programs
 
 - [waybar](https://github.com/TocaiaLd/simple-waybar)

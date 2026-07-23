@@ -2,7 +2,7 @@
 
 # Installing pacman packages and moving config folders to ~.config
 
-PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next cliphist curl discord firefox flatpak grim hyprpaper kanshi kitty mpd networkmanager pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam vlc wget wl-clipboard yazi"
+PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next curl discord firefox flatpak grim github-cli hyprpaper kanshi kitty mpd networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam vlc wget wl-clipboard yazi "
 
 sudo $PACMAN_PACKAGES
 
@@ -33,6 +33,6 @@ if [ "$?" -ne 0 ]; then
     makepkg -si
 fi
 
-YAY_PACKAGES="bluetui visual-studio-code-bin wifitui-bin"
+YAY_PACKAGES="bluetui clipse visual-studio-code-bin wifitui-bin"
 
 yay -S --needed $YAY_PACKAGES
