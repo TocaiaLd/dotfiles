@@ -23,6 +23,7 @@ $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 - grim
 - github-cli
 - hyprpaper
+- hyprshot
 - kanshi
 - kitty
 - mpd
