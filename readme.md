@@ -26,6 +26,7 @@ $ git clone https://github.com/TocaiaLd/dotfiles.git && bash setup.sh
 - hyprshot
 - kanshi
 - kitty
+- ly
 - mpd
 - networkmanager
 - noto-fonts 

@@ -2,7 +2,7 @@
 
 # Installing pacman packages
 
-PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next curl discord firefox flatpak grim github-cli hyprpaper hyprshot kanshi kitty mpd networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam vlc wget wl-clipboard yazi "
+PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next curl discord firefox flatpak grim github-cli hyprpaper hyprshot kanshi ly kitty mpd networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam vlc wget wl-clipboard yazi "
 
 sudo $PACMAN_PACKAGES
 
@@ -38,3 +38,8 @@ for d in "${dirs[@]}"; do
     mkdir ~/.config/$d
     cp -r $d ~/.config/$d
 done
+
+# ly tty
+
+sudo systemctl disable getty@tty1.service
+sudo systemctl enable ly@tty1.service
