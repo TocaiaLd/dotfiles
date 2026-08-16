@@ -1,0 +1,130 @@
+{   
+    "height": 30, 
+    "spacing": 4, 
+    "output": ["eDP-1", "HDMI-A-1"],
+    "modules-left": [
+	"hyprland/workspaces"
+    ],
+    "modules-center": [
+        "mpd"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "bluetooth",
+        "network",
+        "cpu",
+        "memory",
+ 	    "battery",
+        "clock",
+	    "hyprland/language",
+	    "custom/power"
+    ],
+    
+    "hyprland/language": {
+  	"format": "{}",
+  	"format-en": "US",
+	"format-pt": "BR"
+    },
+    "hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"empty": "",
+            "persistent": ""
+		},
+		"persistent-workspaces": {
+			"*": [1, 2, 3, 4, 5]
+        },
+		"cursor": true
+	},
+    "mpd": {
+        "format": "{title}",
+        "format-disconnected": "disconnected",
+        "format-stopped": "stopped", 
+        "unknown-tag": "N/A",
+        "interval": 5,
+        "consume-icons": {
+            "on": ""
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": ""
+        },
+        "repeat-icons": {
+            "on": ""
+        },
+        "single-icons": {
+            "on": ""
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false,
+        "on-click": "kitty btop"
+    },
+    "memory": {
+        "format": "{}% ",
+        "on-click": "kitty btop"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 20
+            // "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰈀",
+        "tooltip-format-wifi": "{essid} ({ipaddr})",
+        "tooltip-format-ethernet": "{ifname} ({ipaddr})",
+        "format-linked": "󱛆", 
+        "format-disconnected": "󰖪",
+        "on-click": "kitty wifitui --theme=/home/$USER/.config/wifitui/theme.toml"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        // "format-bluetooth": "{volume}% {icon} {format_source}",
+        // "format-bluetooth-muted": " {icon} {format_source}",
+        "format": "{volume}% {icon}  {format_source}",
+        "format-muted": "  {format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+        "format": "󰂯",
+        "format-disabled": "󰂲",
+        "format-connected": "󰂱",
+        "tooltip-format": "Active",
+        "tooltip-format-connected": "{device_alias} ({device_battery_percentage}%)",
+        "on-click": "kitty bluetui"
+    },
+    "custom/power": {
+        "format" : "⏻ ",
+		"on-click": "~/.config/waybar/power-menu.sh"
+    }
+}

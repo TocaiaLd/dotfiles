@@ -2,7 +2,7 @@
 
 # Installing pacman packages
 
-PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next curl discord exfatprogs firefox flatpak grim github-cli gnome-disk-utility gvfs gvfs-mtp hyprpaper hyprshot kanshi ly kitty mako mpd nautilus networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji ntfs-3g pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam udiskie udisks2 vlc wget wl-clipboard yazi"
+PACMAN_PACKAGES="pacman -S --needed base-devel bluez btop chromium ckb-next curl discord exfatprogs firefox flatpak grim github-cli gnome-disk-utility gnome-keyring gvfs gvfs-mtp hyprpaper hyprshot kanshi ly kitty mako mpd nautilus networkmanager noto-fonts noto-fonts-cjk noto-fonts-emoji ntfs-3g pavucontrol playerctl pulseaudio qbittorrent rclone rmpc rofi rsync slurp steam udiskie udisks2 vlc waybar wget wl-clipboard yazi"
 
 sudo $PACMAN_PACKAGES
 
@@ -18,11 +18,11 @@ if [ "$?" -ne 0 ]; then
     makepkg -si
 fi
 
-YAY_PACKAGES="bluetui clipse visual-studio-code-bin wifitui-bin"
+YAY_PACKAGES="bluetui clipse proton-drive visual-studio-code-bin wifitui-bin"
 
 yay -S --needed $YAY_PACKAGES
 
-# moving config folders to ~.config
+# moving config folders to ~/.config
 
 cd t495
 
