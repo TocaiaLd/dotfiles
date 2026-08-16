@@ -1,6 +1,6 @@
 # Dotfiles
 
-Simple configuration for my personal computers, separated between my Lenovo ThinkPad T495 and desktop.
+Simple configuration for my personal computers, separated between my Lenovo ThinkPad T495, desktop and server.
 
 ## Installation
 
