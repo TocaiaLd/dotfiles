@@ -1,9 +1,14 @@
 profile docked {
     output HDMI-A-1 enable
-    output DP-1 enable
+    output DP-2 enable
     output eDP-1 disable
 }
 
 profile mobile {
+    output eDP-1 enable
+}
+
+profile paper {
+    output HDMI-A-1 enable
     output eDP-1 enable
 }
