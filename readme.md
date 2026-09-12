@@ -5,10 +5,11 @@ Simple configuration for my personal computers, separated between my Lenovo Thin
 ## Installation
 
 ### Laptop
-In the home directory, clone the repository and run `setup-laptop.sh`:
+Clone the repository and run the commands:
 
 ```bash
-$ git clone https://github.com/TocaiaLd/dotfiles.git && bash ./dotfiles/setup-laptop.sh
+$ git clone https://github.com/TocaiaLd/dotfiles.git 
+$ bash ./dotfiles/setup-laptop.sh
 ```
 
 ### Desktop

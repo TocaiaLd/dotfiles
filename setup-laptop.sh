@@ -1,19 +1,21 @@
-. ./scripts/laptop/yay.sh
+. ./dotfiles/scripts/multilib.sh
 
-yay -S --needed - < ./laptop/aur.txt
+sudo pacman -S --needed - < ./dotfiles/laptop/pacman.txt
 
-sudo pacman -S --needed - < ./laptop/pacman.txt
+. ./dotfiles/scripts/laptop/yay.sh
 
-. ./scripts/laptop/udisk.sh
+yay -S --needed - < ./dotfiles/laptop/aur.txt
 
-. ./scripts/laptop/ly.sh
+. ./dotfiles/scripts/laptop/udisk.sh
 
-. ./scripts/laptop/micro.sh
+. ./dotfiles/scripts/laptop/ly.sh
 
-. ./scripts/laptop/uv.sh
+. ./dotfiles/scripts/laptop/micro.sh
 
-mkdir -p .config
+. ./dotfiles/scripts/laptop/uv.sh
 
-mv laptop/* .config/
+. ./dotfiles/scripts/laptop/ckb.sh
 
-rm -rf dotfiles
+mkdir -p /home/$USER/.config
+
+mv ./dotfiles/laptop/*/ /home/$USER/.config/
