@@ -1,9 +1,12 @@
 {   
     "height": 30, 
     "spacing": 4, 
-    "output": ["eDP-1", "HDMI-A-1"],
+    "output": [
+        "eDP-1", 
+        "HDMI-A-1"
+    ],
     "modules-left": [
-	"hyprland/workspaces"
+	      "hyprland/workspaces"
     ],
     "modules-center": [
         "mpd"
@@ -14,29 +17,31 @@
         "network",
         "cpu",
         "memory",
- 	    "battery",
+   	    "battery",
         "clock",
-	    "hyprland/language",
-	    "custom/power"
+	      "hyprland/language",
+	      "custom/power"
     ],
     
     "hyprland/language": {
-  	"format": "{}",
-  	"format-en": "US",
-	"format-pt": "BR"
+  	  "format": "{}",
+  	  "format-en": "US",
+  	  "format-pt": "BR"
     },
+
     "hyprland/workspaces": {
-		"format": "{icon}",
-		"format-icons": {
-			"active": "",
-			"empty": "",
-            "persistent": ""
-		},
-		"persistent-workspaces": {
-			"*": [1, 2, 3, 4, 5]
-        },
-		"cursor": true
-	},
+		  "format": "{icon}",
+		  "format-icons": {
+			  "active": "",
+			  "empty": "",
+        "persistent": ""
+	  	},
+		  "persistent-workspaces": {
+			  "*": [1, 2, 3, 4, 5]
+      },
+		  "cursor": true
+	  },
+
     "mpd": {
         "format": "{title}",
         "format-disconnected": "disconnected",
@@ -63,15 +68,18 @@
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
+    
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "%Y %B",
+        "on-click": "gsimplecal"
     },
+    
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
         "on-click": "kitty btop"
     },
+    
     "memory": {
         "format": "{}% ",
         "on-click": "kitty btop"
@@ -79,8 +87,8 @@
 
     "battery": {
         "states": {
-            "warning": 20
-            // "critical": 15
+            "warning": 20,
+            "critical": 15
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
@@ -95,12 +103,9 @@
         "tooltip-format-ethernet": "{ifname} ({ipaddr})",
         "format-linked": "󱛆", 
         "format-disconnected": "󰖪",
-        "on-click": "kitty wifitui --theme=/home/$USER/.config/wifitui/theme.toml"
+        "on-click": "nmgui"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        // "format-bluetooth": "{volume}% {icon} {format_source}",
-        // "format-bluetooth-muted": " {icon} {format_source}",
         "format": "{volume}% {icon}  {format_source}",
         "format-muted": "  {format_source}",
         "format-source": "",
@@ -121,10 +126,10 @@
         "format-connected": "󰂱",
         "tooltip-format": "Active",
         "tooltip-format-connected": "{device_alias} ({device_battery_percentage}%)",
-        "on-click": "kitty bluetui"
+        "on-click": "blueman-manager"
     },
     "custom/power": {
         "format" : "⏻ ",
-		"on-click": "~/.config/waybar/power-menu.sh"
+		    "on-click": "~/.config/waybar/power-menu.sh"
     }
 }

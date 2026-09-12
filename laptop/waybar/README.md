@@ -1,7 +1,7 @@
 # Simple Waybar - TocaiaLd
 A simple waybar theme based on terminal applications (TUIs).
 
-![Bar](https://github.com/TocaiaLd/simple-waybar/blob/main/theme.jpeg)
+![Bar]()
 
 #### Installation
 ```bash 
