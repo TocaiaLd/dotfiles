@@ -16,6 +16,8 @@ yay -S --needed - < ./dotfiles/laptop/aur.txt
 
 . ./dotfiles/scripts/laptop/ckb.sh
 
+. ./dofiles/scripts/laptop/ohmyzsh.sh
+
 mkdir -p /home/$USER/.config
 
 mv ./dotfiles/laptop/*/ /home/$USER/.config/

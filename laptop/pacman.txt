@@ -72,3 +72,4 @@ xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xf86-video-vesa
 yazi
+zsh
