@@ -18,6 +18,13 @@ yay -S --needed - < ./dotfiles/laptop/aur.txt
 
 . ./dofiles/scripts/laptop/ohmyzsh.sh
 
+. ./dofiles/scripts/laptop/bluez.sh
+
 mkdir -p /home/$USER/.config
 
 mv ./dotfiles/laptop/*/ /home/$USER/.config/
+
+mv ./dotfiles/scripts/laptop/.p10k.zsh /home/$USER/
+
+sudo rm -rf ./dotfiles
+
