@@ -1,5 +1,6 @@
-brave-bin
 clipse
 esp-idf
+fluffychat-bin
+helium-browser-bin
 nmgui-bin
 vscodium-bin
