@@ -1,10 +1,8 @@
 android-tools
 base
 base-devel
-blueman
 bluez-utils
 brightnessctl
-btop
 ckb-next
 cmake
 dfu-util
@@ -33,10 +31,7 @@ kitty
 kvantum
 linux
 linux-firmware
-ly
-mako
 mesa-utils
-mpd
 mtools
 nautilus
 networkmanager
@@ -52,7 +47,6 @@ python-pip
 qbittorrent
 qt5ct
 qt6ct
-rmpc
 rofi
 steam
 syncthing
@@ -63,7 +57,7 @@ ttf-jetbrains-mono-nerd
 udiskie
 vlc
 vlc-plugins-all
-waybar
+wayle
 wget
 wine
 wireplumber
