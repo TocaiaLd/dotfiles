@@ -2,23 +2,21 @@
 
 sudo pacman -S --needed - < ./dotfiles/laptop/pacman.txt
 
-. ./dotfiles/scripts/laptop/yay.sh
+. ./dotfiles/scripts/yay.sh
 
 yay -S --needed - < ./dotfiles/laptop/aur.txt
 
-. ./dotfiles/scripts/laptop/udisk.sh
+. ./dotfiles/scripts/udisk.sh
 
-. ./dotfiles/scripts/laptop/ly.sh
+. ./dotfiles/scripts/micro.sh
 
-. ./dotfiles/scripts/laptop/micro.sh
+. ./dotfiles/scripts/uv.sh
 
-. ./dotfiles/scripts/laptop/uv.sh
+. ./dotfiles/scripts/ckb.sh
 
-. ./dotfiles/scripts/laptop/ckb.sh
+. ./dofiles/scripts/ohmyzsh.sh
 
-. ./dofiles/scripts/laptop/ohmyzsh.sh
-
-. ./dofiles/scripts/laptop/bluez.sh
+. ./dofiles/scripts/bluez.sh
 
 mkdir -p /home/$USER/.config
 

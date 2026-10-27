@@ -28,7 +28,6 @@ hyprshot
 hyprsunset
 kanshi
 kitty
-kvantum
 linux
 linux-firmware
 mesa-utils
@@ -50,7 +49,6 @@ qt6ct
 rofi
 steam
 syncthing
-tickrs
 tlp
 tree
 ttf-jetbrains-mono-nerd
