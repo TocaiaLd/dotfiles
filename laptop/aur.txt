@@ -3,5 +3,5 @@ clipse
 esp-idf
 fluffychat-bin
 helium-browser-bin
-orchis-theme
+heroic-games-launcher-bin
 vscodium-bin

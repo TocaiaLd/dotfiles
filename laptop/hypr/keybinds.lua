@@ -7,7 +7,6 @@ local mainMod = "SUPER"
 
 -- Programs
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(progs.sound))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(progs.powerMenu))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(progs.code))
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(progs.music))
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(progs.terminal))
@@ -16,10 +15,7 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(progs.fileManager))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(progs.menu))
 hl.bind("Print", hl.dsp.exec_cmd(progs.printScreen))
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd(progs.printAreaScreen))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(progs.wifi))
-hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(progs.blu))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(progs.clipboard))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("pkill hyprsunset || hyprsunset --temperature 4000"))
 
 -- Hyprland Actions
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
@@ -28,6 +24,7 @@ hl.bind(
 	mainMod .. " + SHIFT + L",
 	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- bind = $mainMod, V, togglefloating
 -- hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))

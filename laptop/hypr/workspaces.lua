@@ -10,17 +10,17 @@
 --   })
 -- end
 
-hl.workspace_rule({ workspace = "1", monitor = "HDMI-A-1", default = true })
-hl.workspace_rule({ workspace = "2", monitor = "HDMI-A-1" })
-hl.workspace_rule({ workspace = "3", monitor = "HDMI-A-1" })
-hl.workspace_rule({ workspace = "4", monitor = "HDMI-A-1" })
-hl.workspace_rule({ workspace = "5", monitor = "DP-2", default = true, persistent = true })
+hl.workspace_rule({ workspace = "1", monitor = "eDP-1", default = true })
+hl.workspace_rule({ workspace = "2", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "3", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "4", monitor = "eDP-1" })
+hl.workspace_rule({ workspace = "5", monitor = "eDP-1"})
 
 hl.window_rule({
 	name = "calendar",
 	match = { class = "gsimplecal" },
 	float = true,
-	move = { 1720, 40 },
+	move = { 1680, 40 },
 })
 
 hl.window_rule({
@@ -41,6 +41,29 @@ hl.window_rule({
 	match = { class = "blueman-manager" },
 	float = true,
 	size = { 500, 500 },
+})
+
+hl.window_rule({
+	name = "galculator",
+	match = { class = "galculator" },
+	float = true,
+	size = { 300, 500 },
+	move = {1580, 560}
+})
+
+hl.window_rule({
+	name = "pavucontrol",
+	match = { class = "org.pulseaudio.pavucontrol" },
+	float = true,
+	size = { 900, 500 },
+})
+
+hl.window_rule({
+	name = "open-folder",
+	match = { class = "xdg-desktop-portal-gtk" },
+	float = true,
+	size = { 750, 750 },
+	center = true,
 })
 
 -- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/

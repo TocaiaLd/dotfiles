@@ -1,0 +1,7 @@
+clementine
+clipse
+esp-idf
+fluffychat-bin
+helium-browser-bin
+heroic-games-launcher-bin
+vscodium-bin

@@ -1,0 +1,76 @@
+[bar]
+scale = 0.800000011920929
+bg = "bg-base"
+background-opacity = 56
+
+[[bar.layout]]
+monitor = "eDP-1"
+show = true
+left = ["hyprland-workspaces"]
+center = [
+    "clock",
+    "media",
+]
+right = [
+    "systray",
+    "hyprsunset",
+    "bluetooth",
+    "network",
+    "volume",
+    "cpu",
+    "ram",
+    "battery",
+    "power",
+]
+
+[modules.battery]
+border-color = "blue"
+icon-bg-color = "blue"
+label-color = "blue"
+
+[modules.bluetooth]
+border-color = "blue"
+icon-bg-color = "blue"
+label-show = false
+label-color = "blue"
+
+[modules.clock]
+border-color = "blue"
+icon-bg-color = "blue"
+label-color = "blue"
+
+[modules.hyprland-workspaces]
+min-workspace-count = 5
+monitor-specific = false
+app-icons-show = true
+active-color = "blue"
+occupied-color = "blue"
+container-bg-color = "transparent"
+
+[modules.hyprsunset]
+temperature = 3500
+border-color = "blue"
+icon-bg-color = "blue"
+label-color = "blue"
+
+[modules.network]
+border-color = "blue"
+icon-bg-color = "blue"
+label-show = false
+label-color = "blue"
+
+[modules.power]
+border-color = "blue"
+icon-bg-color = "blue"
+right-click = "reboot"
+left-click = "poweroff"
+
+[modules.ram]
+border-color = "blue"
+icon-bg-color = "blue"
+label-color = "blue"
+
+[modules.volume]
+border-color = "blue"
+icon-bg-color = "blue"
+label-color = "blue"
