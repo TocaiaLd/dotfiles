@@ -1,33 +1,25 @@
-sudo echo "[multilib]" >> /etc/pacman.conf
-sudo echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
+echo "Activating multilib"
+./dotifles/scripts/multilib.sh
+pacman -Syu
+pacman -S --needed - < ./dotfiles/desktop/pacman.txt
 
-sudo pacman -Syu
-
-sudo pacman -S --needed - < ./dotfiles/desktop/pacman.txt
-
-. ./dotfiles/scripts/yay.sh
+./dotfiles/scripts/yay.sh
 
 yay -S --needed - < ./dotfiles/desktop/aur.txt
 
-. ./dotfiles/scripts/udisk.sh
-
-. ./dotfiles/scripts/micro.sh
-
-. ./dotfiles/scripts/uv.sh
-
-. ./dotfiles/scripts/ly.sh
-
-. ./dotfiles/scripts/ckb.sh
-
-. ./dofiles/scripts/ohmyzsh.sh
-
-. ./dofiles/scripts/bluez.sh
+./dotfiles/scripts/udisk.sh
+./dotfiles/scripts/micro.sh
+./dotfiles/scripts/uv.sh
+./dotfiles/scripts/ly.sh
+./dotfiles/scripts/ckb.sh
+./dofiles/scripts/ohmyzsh.sh
+./dofiles/scripts/bluez.sh
 
 mkdir -p /home/$USER/.config
 
-mv ./dotfiles/desktop/*/ /home/$USER/.config/
+cp -r ./dotfiles/desktop/* /home/$USER/.config/
 
-mv ./dotfiles/scripts/desktop/.p10k.zsh /home/$USER/
+cp -r ./dotfiles/scripts/desktop/.p10k.zsh /home/$USER/
 
-sudo rm -rf ./dotfiles
+rm -rf ./dotfiles
 
